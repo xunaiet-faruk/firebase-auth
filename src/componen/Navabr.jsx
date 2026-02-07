@@ -30,7 +30,7 @@ const Navabr = () => {
         <NavLink className="nav" to={'/fdsa'}>
     About
     </NavLink>
-        <NavLink className="nav" to={'/fdsa'}>
+        <NavLink className="nav" to={'/login'}>
     Sing-in
     </NavLink>
         <NavLink className="nav" to={'/register'}>

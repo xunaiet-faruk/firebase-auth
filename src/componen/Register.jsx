@@ -27,7 +27,15 @@ const Register = () => {
                 <form onSubmit={handlSubmit} className='space-y-5 ' action="">
                     <input type="text" placeholder="Type here" name='name' className="input" />
                     <input type="email" placeholder="Type here" name='email' className="input" />
-                    <input type="password" placeholder="Type here" name='password' className="input" /><br/>
+                    <input
+                        type="password"
+                        className="input"
+                        name="password"
+                        placeholder="Password"
+                        required
+                        pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*]).{6,}"
+                        title="Password must be 6+ chars, include uppercase, lowercase, number & special char"
+                    /><br/>
                     <button type='submit' className='btn w-1/2 bg-fuchsia-700 font-bold hover:bg-red-500'>Register</button>
 
                 </form>
